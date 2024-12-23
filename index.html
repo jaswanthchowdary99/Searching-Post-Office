@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Based Information</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <div class="container-1">
+    <div class="box1">
+      <h1>Post Office Application</h1>
+      <p>This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+      <img class="img1" src="postman.svg" alt="Postman" />
+    </div>
+  </div>
+  <div class="container-2">
+    <div class="box2">
+      <h2>Your Current IP address is <span id="ipAddress"></span></h2>
+      <button class="getStarted">Get Started</button>
+    </div>
+  </div>
+</div>
+
+<div class="container-3">
+  <div id="lonLat">
+    <p>IP Address: <span id="ipAddress2"></span></p>
+    <div class="box3">
+      <div>
+        <p>Lat: <span id="lat"></span></p>
+        <p>Long: <span id="long"></span></p>  
+      </div>
+      
+      <div>
+        <p>City: <span id="city"></span></p>
+        <p>Region: <span id="region"></span></p>
+      </div>
+     
+       <div>
+        <p>Organisation: <span id="org"></span></p>
+        <p>Hostname: <span id="host"></span></p>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="cont-4-bg">
+  <div class="container-4">
+    <div id="mapContainer">
+      <h2>Your Current Location</h2>
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-5">
+<div id="timeContainer">
+  <h2>More Information About You</h2>
+  <div class="zones">
+    <p>Time Zone: <span id="time"></span></p>
+    <p>Date and Time: <span id="date"></span></p>
+    <p>Pincode: <span id="pin"></span></p>
+    <p>Message (Number of pincodes found): <span id="noOfPin"></span></p>
+
+  </div>
+  <p id="currentTime"></p>
+</div>
+</div>
+
+<div class="container-6">
+<div id="postOfficesContainer">
+  <h2>Post Offices Near You</h2>
+  <input
+    type="text"
+    id="searchPostOffices"
+    placeholder="Search by name"
+  />
+  <div id="postOffices"></div>
+</div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
